@@ -57,5 +57,6 @@ io.on('connect', (socket) => {
 });
 
 app.use(router);
+app.use(cors());
 
 server.listen(port, () => console.log(`listening to the port, ${port}`));
